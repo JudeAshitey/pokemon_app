@@ -12,6 +12,11 @@ class Index extends React.Component{
         return(
             <div>
                 <h1>Pokemon</h1>
+                <ul>
+                    {pokemon.map((pokemon, idx) => (
+                        <li>{pokemon.name}{" "}<img src = {pokemon.img}/></li>
+                    ))}
+                </ul>
             </div>
         )
     }
